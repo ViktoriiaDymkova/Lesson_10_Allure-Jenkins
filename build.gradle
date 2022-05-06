@@ -39,6 +39,7 @@ tasks.withType(JavaCompile) {
 }
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
@@ -52,5 +53,10 @@ task demoqa_tests(type: Test) {
     useJUnitPlatform {
         includeTags "demoqa"
 //        excludeTags "simple"
+    }
+    task systemProperties(type: Test) {
+        useJUnitPlatform {
+            includeTags "systemProperties"
+        }
     }
 }
