@@ -17,9 +17,9 @@ public class RegistrationFormTests extends TestBase {
     void fillFormTest() {
         step("Открываем форму регистрации", () -> {
             open("/automation-practice-form");
-            //executeJavaScript("$('footer').remote()");
-            //executeJavaScript("$('#fixe').remote()");
-            zoom(0.65);
+            executeJavaScript("$('footer').remove()");
+            executeJavaScript("$('#fixe').remove()");
+           // zoom(0.65);
         });
         step("Заполняем форму регистрации", () -> {
             $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
