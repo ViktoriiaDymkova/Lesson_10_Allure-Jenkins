@@ -19,7 +19,7 @@ public class RegistrationFormTests extends TestBase {
             open("/automation-practice-form");
             executeJavaScript("$('footer').remove()");
             executeJavaScript("$('#fixe').remove()");
-           // zoom(0.65);
+           zoom(0.65);
         });
         step("Заполняем форму регистрации", () -> {
             $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
