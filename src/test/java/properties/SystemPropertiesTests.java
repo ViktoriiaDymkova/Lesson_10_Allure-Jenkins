@@ -46,15 +46,14 @@ public class SystemPropertiesTests {
         chrome
         100
         1920x1080
-
         /*gradle clean test5 -Dbrowser=opera -Dversion=99 -DbrowserSize=300x300
         opera
         99
-        1920x1080 почему не сменился размер
+        1920x1080 почему не передался размер
          */
     }
         @Test
         void someTest6(){
-            System.out.println("i want to say: " + System.getProperty("any"));
+            System.out.println("i want to say: " + System.getProperty("anyText"));
         }
     }
