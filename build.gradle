@@ -76,3 +76,8 @@ task owner(type: Test) {
         includeTags "owner"
     }
 }
+task homework(type: Test) {
+    useJUnitPlatform {
+        includeTags "homework"
+    }
+}

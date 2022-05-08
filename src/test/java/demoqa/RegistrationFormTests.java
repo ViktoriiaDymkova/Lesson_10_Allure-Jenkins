@@ -13,6 +13,7 @@ import static io.qameta.allure.Allure.step;
 public class RegistrationFormTests extends TestBase {
 
     @Test
+    @Tag("homework")
     @DisplayName("Успешное заполнение формы регистрации")
     void fillFormTest() {
         step("Открываем форму регистрации", () -> {
