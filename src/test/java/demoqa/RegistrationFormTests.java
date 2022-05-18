@@ -18,8 +18,8 @@ public class RegistrationFormTests extends TestBase {
     void fillFormTest() {
         step("Открываем форму регистрации", () -> {
             open("/automation-practice-form");
-            //executeJavaScript("$('footer').remote()");
-            //executeJavaScript("$('#fixe').remote()");
+            executeJavaScript("$('footer').remove()");
+            executeJavaScript("$('#fixe').remove()");
             zoom(0.65);
         });
         step("Заполняем форму регистрации", () -> {
